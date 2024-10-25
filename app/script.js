@@ -6,30 +6,45 @@ Ogni oggetto descriverà una bici da corsa con le seguenti proprietà: nome e pe
 Stampare a schermo la bici con peso minore.
 */
 
-const bicycle1 = {  // Oggetto1
-    brand: 'Scott',
-    weight: '9kg'
-}
-
-const bicycle2 = {  // Oggetto2
-    brand: 'Bianchi',
-    weight: '11kg'
-}
-
-const bicycle3 = {  // Oggetto3
-    brand: 'Specialized',
-    weight: '7kg'
-}
-
-const bicycle4 = {  // Oggetto4
-    brand: 'Cube',
-    weight: '10kg'
-}
-
-const bicycles = [bicycle1, bicycle2, bicycle3, bicycle4]  // Array di oggetti
+const bicycles = [   // Array di oggetti
+    {
+        brand: 'Scott',
+        weight: 9
+    },
+    {
+        brand: 'Bianchi',
+        weight: 11
+    },
+    {
+        brand: 'Specialized',
+        weight: 7
+    },
+    {
+        brand: 'Cube',
+        weight: 10
+    },
+]
 
 // Stampo in console la bici con peso minore
-console.log(bicycles[2])
+// console.log(bicycles[2].weight)
+// console.log(bicycles[2].weight * 2) // moltiplico * 2 il valore number di weigth
+// console.log(bicycles[2]['weight'])
+
+// peso di riferimento es. prima biciletta
+let lightestWeightBicyle = bicycles[0]
+
+// ciclo for per scorrere tutti gli elementi dell'array (bicilette)
+for (let i = 0; i < bicycles.length; i++) {
+    const currentElement = bicycles[i]
+
+    // condizione if che confronta se il peso di riferimento è da aggiornare (confronto riferimento con elemento i) 
+    if (currentElement.weight < lightestWeightBicyle.weight) {
+        lightestWeightBicyle = currentElement
+    }
+}
+
+// Stampo a schermo la bici con peso minore
+console.log('Bicicletta più leggera:', lightestWeightBicyle)
 
 
 /*
@@ -46,31 +61,29 @@ function getRandomNumber() {
     return Math.floor((Math.random() * 100) + 1)
 }
 
-const squad1 = {  // Oggetto1
-    name: 'fiorentina',
-    score: '0',
-    penalties: '0'
-}
+const soccerSquads = [   // Array di oggetti
+    {
+        name: 'fiorentina',
+        score: '0',
+        penalties: '0'
+    },
+    {
+        name: 'milan',
+        score: '0',
+        penalties: '0'
+    },
+    {
+        name: 'inter',
+        score: '0',
+        penalties: '0'
+    },
+    {
+        name: 'juventus',
+        score: '0',
+        penalties: '0'
+    },
+]
 
-const squad2 = {  // Oggetto2
-    name: 'milan',
-    score: '0',
-    penalties: '0'
-}
-
-const squad3 = {  // Oggetto3
-    name: 'inter',
-    score: '0',
-    penalties: '0'
-}
-
-const squad4 = {  // Oggetto4
-    name: 'juventus',
-    score: '0',
-    penalties: '0'
-}
-
-const soccerSquads = [squad1, squad2, squad3, squad4]  // Array di oggetti
 
 // per ogni Squad dell'array soccerSquads, richiamo il valori di tutti gli oggetti contenuti nell'array,
 // tramite la funzione assegno i nuemri random
