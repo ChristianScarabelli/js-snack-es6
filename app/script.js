@@ -6,6 +6,31 @@ Ogni oggetto descriverà una bici da corsa con le seguenti proprietà: nome e pe
 Stampare a schermo la bici con peso minore.
 */
 
+const bicycle1 = {  // Oggetto1
+    brand: 'Scott',
+    weight: '9kg'
+}
+
+const bicycle2 = {  // Oggetto2
+    brand: 'Bianchi',
+    weight: '11kg'
+}
+
+const bicycle3 = {  // Oggetto3
+    brand: 'Specialized',
+    weight: '7kg'
+}
+
+const bicycle4 = {  // Oggetto4
+    brand: 'Cube',
+    weight: '10kg'
+}
+
+const bicycles = [bicycle1, bicycle2, bicycle3, bicycle4]  // Array di oggetti
+
+console.log(bicycles[2])
+
+
 /*
 Snack2
 Creare un array di oggetti di squadre di calcio.
