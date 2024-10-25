@@ -64,23 +64,23 @@ function getRandomNumber() {
 const soccerSquads = [   // Array di oggetti
     {
         name: 'fiorentina',
-        score: '0',
-        penalties: '0'
+        score: 0,
+        penalties: 0
     },
     {
         name: 'milan',
-        score: '0',
-        penalties: '0'
+        score: 0,
+        penalties: 0
     },
     {
         name: 'inter',
-        score: '0',
-        penalties: '0'
+        score: 0,
+        penalties: 0
     },
     {
         name: 'juventus',
-        score: '0',
-        penalties: '0'
+        score: 0,
+        penalties: 0
     },
 ]
 
