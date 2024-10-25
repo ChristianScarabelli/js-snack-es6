@@ -94,3 +94,18 @@ Snack 3 (Bonus)
 Scrivere una funzione che accetti tre argomenti, un array e due numeri (a più piccolo di b).
 La funzione ritornerà un nuovo array con i valori che hanno la posizione compresa tra i due numeri.
 */
+
+
+function getArrayWithNumbersFromNumAToNumB(array, numA, numB) {
+    if (numA < numB)
+        return array.slice(numA, numB + 1)  // quando a è più piccolo di b, mi ritorno un array tagliato, da a a b
+    else {
+        return []
+    }
+}
+
+const numberArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+const result = getArrayWithNumbersFromNumAToNumB(numberArray, 3, 10)
+
+// Stampo in console (4,5,6,7,8,9)
+console.log(result)
