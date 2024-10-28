@@ -34,7 +34,7 @@ const bicycles = [   // Array di oggetti
 let lightestWeightBicyle = bicycles[0]
 
 // ciclo for per scorrere tutti gli elementi dell'array (bicilette)
-for (let i = 0; i < bicycles.length; i++) {
+for (let i = 1; i < bicycles.length; i++) {   // per non confrontare la prima bici con se stessa, siccome partiamo da [0], nel ciclo, i è = 1, così si parte con la seconda
     const currentElement = bicycles[i]
 
     // condizione if che confronta se il peso di riferimento è da aggiornare (confronto riferimento con elemento i) 
